@@ -1,0 +1,45 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+.containers{
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .slide-right{
+
+  overflow: hidden;
+   z-index: 1;
+
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+
+
+}
+
+.slide-right .slide {
+  animation: 0.5s slide-right 0.5s forwards;
+    transform:translateX(-100%);
+}
+
+@keyframes slide-right {
+  to {
+    transform:translateX(0);
+  }
+}
+
+.content{
+  //padding: 20px;
+  // background-color: brown;
+}
+}
+
+

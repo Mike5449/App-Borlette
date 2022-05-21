@@ -1,0 +1,136 @@
+<div class="container" id="contain" >
+
+  <div id="containElem" class="row">
+
+    <div class="col-md-8 col-smal-offset-2">
+
+
+
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+        <div class="form-group">
+          <label for="name">Selectionner une date </label>
+          <svg class="bi" width="32" height="32" fill="currentColor">
+            <use xlink:href="bootstrap-icons.svg#heart-fill"/>
+          </svg>
+          <!-- <div class="col-12">
+            <div class="input-group">
+              <input class="form-control" placeholder="yyyy-mm-dd"
+                     name="dp" [(ngModel)]="model" ngbDatepicker [footerTemplate]="footerTemplate" #d="ngbDatepicker">
+              <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+            </div>
+          </div> -->
+          <!-- <input type="text" id="name" class="form-control" name="name" ngModel required> -->
+          <div class="input-group date" data-provide="datepicker">
+            <input type="text" class="form-control">
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+            </div>
+        </div>
+        </div>
+
+        <div >
+          <label for="pass">Heure de tirage </label>
+
+          <div style="display: flex;flex-direction:row;gap:20px" class="form-group">
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Midi
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Soir
+              </label>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="pass">Zone</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Toutes</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="pass">Tirage</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Tous</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="pass">Responsable</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Tous</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+        </div>
+
+
+        <div class="btn">
+          <!-- <bi name="list-stars" style="color: green;width: 15px;" class="someclass"></bi>
+          <bi name="app" style="color: green;width: 15px;"></bi>
+          <bi name="bookmark" style="color: green;width: 15px;"></bi>
+          <fa-icon [icon]="faCoffee" [styles]="{'stroke': 'red', 'color': 'red'}" ></fa-icon> -->
+          <button type="submit" [disabled]="f.invalid"   class="btn btn-primary">Rechercher <i class="fa fa-plus"></i></button>
+        </div>
+
+
+
+
+      </form>
+
+
+    </div>
+  </div>
+
+  <!-- <div>
+
+    <button (click)="openModal('custom-modal-1')">Open Modal 1</button>
+    <button (click)="openModal('custom-modal-2')">Open Modal 2</button>
+</div> -->
+
+
+
+</div>
+
+<!-- <app-modal1 id="custom-modal-1">
+  <h1>A Custom Modal!</h1>
+  <button (click)="closeModal('custom-modal-1');">Close</button>
+</app-modal1>
+
+<app-modal1 id="custom-modal-2">
+  <h1 style="height:1000px">A Tall Custom Modal!</h1>
+  <button (click)="closeModal('custom-modal-2');">Close</button>
+</app-modal1> -->
+
+<!-- <ng-template #footerTemplate>
+  <hr class="my-0">
+  <button class="btn btn-primary btn-sm m-2 float-start" (click)="model = today; d.close()">Today</button>
+  <button class="btn btn-secondary btn-sm m-2 float-end" (click)="d.close()">Close</button>
+</ng-template> -->
+
+

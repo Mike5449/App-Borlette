@@ -1,0 +1,35 @@
+<header fxLayoutAlign="space-between center">
+
+  <div flexLayout="row" fxLayoutGap="20px">
+
+    <button (click)="hideOrShowSideBar()"><bi name="list" style="color: white;width: 30px;" class="someclass"></bi></button>
+
+
+  </div>
+
+  <div class="infoHeader">
+    <p >{{infoHeader}}</p>
+
+  </div>
+
+  <div class="logo">
+
+    <div class="logout">
+      <button (click)="logout()">
+
+       <bi name="box-arrow-left" style="color: red;width: 20px;" class="someclass"></bi>
+       <p>Deconnecter</p>
+      </button>
+      <!-- <bi name="list" style="color: red;width: 20px;" class="someclass"></bi> -->
+      <!-- <i class="material-icons">zoom_out_map</i> -->
+      <!-- <i class="fa fa-bank" style="font-size:48px;color:red"></i> -->
+      <!-- <i class="fa fa-bank" style="font-size:24px"></i> -->
+
+    </div>
+
+    <!-- <img src="../../../../assets/images/goLogo.png" width="55px"> -->
+
+  </div>
+
+
+</header>

@@ -1,0 +1,24 @@
+<div class="containers">
+  <app-header flexLayout="column"></app-header>
+
+<div flexLayout="row" fxFlex>
+
+  <div class="slide-right" *ngIf="hideOrShowSideBar==true"  fxFlex="18" [ngStyle]="{'display':hideOrShowSideBar?'none':'flex'}">
+
+    <app-sidebar class="slide"  fxFlex></app-sidebar>
+
+  </div>
+
+  <div fxFlex="100" class="content">
+
+    <router-outlet></router-outlet>
+
+  </div>
+
+
+</div>
+</div>
+
+
+<!-- <app-footer flexLayout="column"></app-footer> -->
+

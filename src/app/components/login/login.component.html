@@ -1,0 +1,38 @@
+<div id="contain" >
+  <p>LOTO BIG BORLETTE</p>
+  <div id="containElem" class="row">
+
+    <div class="col-md-8 col-smal-offset-2">
+
+
+
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm" >
+
+        <div class="form-group">
+          <label for="user">Nom d'utilisateur</label>
+          <input type="text" id="user" class="form-control" name="user" ngModel required>
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="pass">Mot de passe</label>
+          <input type="password" id="pass" class="form-control" name="pass" ngModel required>
+
+        </div>
+
+        <div class="btn">
+          <button type="submit" [disabled]="f.invalid"  class="btn btn-primary">Connecter <i class="fa fa-plus"></i></button>
+        </div>
+
+
+
+
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+

@@ -1,0 +1,117 @@
+#contain{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @keyframes contain {
+    to {
+      transform:translateX(0);
+    }
+  }
+
+  #containElem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    animation: 0.5s slide-right 0.5s forwards;
+    transform:translateX(-100%);
+
+    form{
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 550px;
+
+      .precedent{
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        flex-direction: column;
+
+        .btn{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          button{
+            width: 100%;
+          }
+        }
+
+      }
+
+      .next{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 18px;
+        overflow: hidden;
+        z-index: 1;
+
+        animation: fadeIn linear 1s;
+        -webkit-animation: fadeIn linear 1s;
+        -moz-animation: fadeIn linear 1s;
+        -o-animation: fadeIn linear 1s;
+        -ms-animation: fadeIn linear 1s;
+
+        .formBtn{
+
+         display: flex;
+         flex-direction: column;
+         gap: 18px;
+
+        .backAnVal{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .btn{
+            width: 100%;
+          }
+        }
+      }
+
+
+
+    }
+
+      .next .formBtn {
+        animation: 0.5s slide-right 0.5s forwards;
+          transform:translateX(-100%);
+      }
+
+      @keyframes next {
+        to {
+          transform:translateX(0);
+        }
+      }
+
+      label{
+        color: #0B0B45;
+      }
+
+      input,select{
+        border: 1px solid #0B0B45;
+        height: 32px;
+
+
+
+      }
+
+      button{
+        background-color: #0B0B45;
+      }
+
+    }
+
+}
+
+
+}
+
+

@@ -1,0 +1,73 @@
+:host{
+ // padding: 20px;
+  //background-color: #090937;
+  background-color: rgb(128, 128, 128);
+  // border-right: 1px solid rgba(52, 168, 52, 0.788);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+  .identifient{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    //justify-content: center;
+    height: 50;
+    gap: 10px;
+    padding: 5px;
+    border-bottom:1px solid #0B0B45;
+
+    .photo{
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      border: 1px solid white;
+    }
+    .roleName{
+      color: white;
+      .nom{
+        font-weight: bold;
+        font-size: 12px;
+      }
+      .role{
+        font-size: 10px;
+      }
+    }
+  }
+
+  .link{
+    padding: 10px;
+
+    .iSselect{background-color: rgba(52, 168, 52, 0.788)}
+
+    button{
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+
+      .someclass{
+        color: #0B0B45;width: 15px;
+
+      }
+
+    }
+    button:hover{
+     background-color: rgba(52, 168, 52, 0.788)
+    }
+
+  }
+  .footer{
+    //display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: #0B0B45;
+    //padding: 0;
+  }
+
+}

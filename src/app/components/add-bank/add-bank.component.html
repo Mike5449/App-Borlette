@@ -1,0 +1,86 @@
+<div class="container" id="contain" >
+
+  <div id="containElem" class="row">
+
+    <div class="col-md-8 col-smal-offset-2">
+
+
+
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+
+        <div class="form-group">
+          <label for="address">Adresse </label>
+          <div class="input-group date" >
+            <input type="text" id="address" name="address" class="form-control" ngModel require>
+
+        </div>
+        </div>
+
+        <div class="form-group">
+          <label for="telf1">Telephone 1 </label>
+          <div class="input-group date" >
+            <input type="number" id="telf1" name="telf1" class="form-control" ngModel require>
+
+        </div>
+        </div>
+
+        <div class="form-group">
+          <label for="telf2">Telephone 2 </label>
+          <div class="input-group date" >
+            <input type="number" id="telf2" name="telf2" class="form-control" ngModel require>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="percent">Pourcentage de la banque</label>
+          <div class="input-group date" >
+            <input type="number" id="percent" name="percent" class="form-control" ngModel required>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <label for="type">Statut</label>
+          <select class="form-select" id="type" name="type" aria-label="Default select example" ngModel required>
+            <option selected></option>
+            <option value="1">Ouvrir</option>
+            <option value="2">Fermer</option>
+
+          </select>
+
+        </div>
+
+        <div class="form-group">
+          <label for="respons">Responsable</label>
+          <div class="input-group date" >
+            <input type="text" id="respons" name="respons" class="form-control" ngModel required>
+
+          </div>
+        </div>
+
+
+        <div class="btn">
+          <button type="submit" [disabled]="f.invalid"   class="btn btn-primary">Ajouter <i class="fa fa-plus"></i></button>
+        </div>
+
+
+
+
+      </form>
+
+
+    </div>
+  </div>
+
+</div>
+
+<!-- <ng-template #footerTemplate>
+  <hr class="my-0">
+  <button class="btn btn-primary btn-sm m-2 float-start" (click)="model = today; d.close()">Today</button>
+  <button class="btn btn-secondary btn-sm m-2 float-end" (click)="d.close()">Close</button>
+</ng-template> -->
+
+

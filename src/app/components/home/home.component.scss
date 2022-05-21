@@ -1,0 +1,28 @@
+#contain{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #containElem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    form{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      input,select{
+        border: 1px solid #0B0B45;;
+      }
+
+    }
+
+}
+
+
+}
+
+

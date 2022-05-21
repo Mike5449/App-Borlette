@@ -1,0 +1,159 @@
+<div class="container" id="contain" >
+
+  <div id="containElem" class="row">
+
+    <div class="col-md-8 col-smal-offset-2" id="containItem">
+
+
+
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+        <div class="precedent" [ngStyle]="{'display':precedOrNext=='precedent'?'flex':'none'}">
+
+          <div class="form-group">
+            <label for="nom">Nom </label>
+            <div class="input-group date" >
+              <input type="text" id="nom" name="nom" class="form-control" ngModel require>
+
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <label for="prenom">Prenom </label>
+            <div class="input-group date" >
+              <input type="text" id="prenom" name="prenom" class="form-control" ngModel require>
+
+            </div>
+
+          </div>
+
+        <div class="form-group">
+
+          <label for="type">Sexe</label>
+          <select class="form-select" id="sexe" name="sexe" aria-label="Default select example" ngModel required>
+            <option selected></option>
+            <option value="Masculin">Masculin</option>
+            <option value="Feminin">Feminin</option>
+
+          </select>
+
+        </div>
+
+        <div class="form-group">
+          <label for="nif">Nif/Cin</label>
+          <div class="input-group date" >
+            <input type="text" id="nif" name="nif" class="form-control" ngModel require>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <label for="type">Type</label>
+          <select class="form-select" id="type" name="type" aria-label="Default select example" ngModel required>
+            <option selected></option>
+            <option value="Interne">Interne</option>
+            <option value="Partenaire">Partenaire</option>
+
+          </select>
+
+        </div>
+
+          <div class="form-group">
+
+            <label for="statut">Statut</label>
+            <select class="form-select" id="statut" name="statut" aria-label="Default select example" ngModel required>
+              <option selected></option>
+              <option value="Ative">Active</option>
+              <option value="Bloquer">Bloquer</option>
+
+            </select>
+
+          </div>
+
+          <div class="btn" [ngStyle]="{'display':precedOrNext=='precedent'?'flex':'none'}">
+            <button type="button"  (click)="isPrecedOrNext('suivant')" class="btn btn-primary">Suivant</button>
+          </div>
+
+        </div>
+
+        <div class="next" [ngStyle]="{'display':precedOrNext=='suivant'?'flex':'none'}">
+
+          <div class="formBtn">
+
+            <div class="form-group">
+
+              <label for="point">Point de vente</label>
+              <select class="form-select" id="point" name="point" aria-label="Default select example" ngModel required>
+                <option selected></option>
+                <option value="1">Go lotto</option>
+                <option value="2">Go lotto</option>
+                <option value="2">Go lotto</option>
+                <option value="2">Go lotto</option>
+
+              </select>
+
+            </div>
+
+            <div class="form-group">
+              <label for="userName">Nom utilisateur </label>
+              <div class="input-group date" >
+                <input type="text" id="username" name="username" class="form-control" ngModel required>
+
+              </div>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password </label>
+                <div class="input-group date" >
+                  <input type="password" id="password" name="password" class="form-control" ngModel require>
+
+              </div>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Confirmer password </label>
+                <div class="input-group date" >
+                  <input type="password" id="confpassword" name="confpassword" class="form-control" ngModel require>
+
+                </div>
+
+              </div>
+
+
+              <div class="backAnVal">
+
+                <div class="btn" [ngStyle]="{'display':precedOrNext=='precedent'?'none':'flex'}">
+                  <button type="submit" (click)="isPrecedOrNext('precedent')"  class="btn btn-primary">Precedent</button>
+                </div>
+
+                <div class="btn" [ngStyle]="{'display':precedOrNext=='precedent'?'none':'flex'}">
+                  <button type="submit" [disabled]="f.invalid"   class="btn btn-primary">Valider</button>
+                </div>
+
+              </div>
+
+          </div>
+
+
+
+
+        </div>
+
+
+      </form>
+
+
+    </div>
+  </div>
+
+</div>
+
+<!-- <ng-template #footerTemplate>
+  <hr class="my-0">
+  <button class="btn btn-primary btn-sm m-2 float-start" (click)="model = today; d.close()">Today</button>
+  <button class="btn btn-secondary btn-sm m-2 float-end" (click)="d.close()">Close</button>
+</ng-template> -->
+
+
