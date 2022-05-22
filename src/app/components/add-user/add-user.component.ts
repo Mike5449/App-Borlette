@@ -57,8 +57,6 @@ export class AddUserComponent implements OnInit {
       this.userService.setUser(userCreat).subscribe((data)=>{
       //console.log(data);
     })
-    
-
     :alert('mot pa non confirmer')
 
   }

@@ -88,10 +88,6 @@ const routes: Routes = [
 
   imports: [RouterModule.forRoot(routes),FormsModule,],
   exports: [RouterModule],
-  providers: [{
-    provide: HTTP_INTERCEPTORS,
-    useClass: TokenInterceptorService,
-    multi: true,
-  }],
+  providers: [],
 })
 export class AppRoutingModule { }

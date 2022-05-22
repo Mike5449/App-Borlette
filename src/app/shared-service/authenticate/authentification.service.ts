@@ -15,14 +15,14 @@ export class AuthentificationService {
 
   // }
   isLogin(){
-    return localStorage.getItem('token')!=null;
+    return localStorage.getItem('access_token')!=null;
   }
   getToken(){
-    return localStorage.getItem('token')||'';
+    return localStorage.getItem('access_token')||'';
   }
 
   haveAccess(){
-   let loginToken=localStorage.getItem('token')||'';
+   let loginToken=localStorage.getItem('access_token')||'';
    let _extrectedtoken=loginToken.split('.')[1];
    let _atobdata=atob(_extrectedtoken);
    let _finaldata=JSON.parse(_atobdata);
